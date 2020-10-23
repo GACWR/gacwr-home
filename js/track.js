@@ -4,7 +4,7 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-G-R46TE98760', 'auto');
+ga('create', '250309821', 'auto');
 ga('send', 'pageview');
 
 $(".nav-link").click((function(obj){
