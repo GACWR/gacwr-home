@@ -107,13 +107,17 @@
 
       <!--  -->
       <div class="video-container">
-      	<video autoplay loop playsinline width="1280" height="720">
+      	<!-- <video autoplay loop playsinline width="1280" height="720">
       		<source src="gacwr.mp4" type="video/mp4">
-      	</video>
+      	</video> -->
         <video autoplay loop muted playsinline width="1280" height="720" srcdesk="gacwr.mp4" srcmob="gacwr.mp4">
-          <source src="gacwr.mp4" type="video/mp4">
+          <!-- <source src="gacwr.mp4" type="video/mp4"> -->
         </video>
       </div>
+
+      <!-- <div class="videocontainer">
+        <video autoplay loop width="1280" height="720" srcdesk="video.mp4" srcmob="video-mobile.mp4"></video>
+      </div> -->
 
 
       <!--  -->
@@ -323,9 +327,10 @@
       var  video = $(".video-container video").attr("srcdesk");
       if($(window).width() < 721) {
         videoWidth = 720;
-        video = $(".video-container video").attr("srcmob"));
+        video = $(".video-container video").attr("srcmob");
       }
-      $(".video-container video").attr("width", videoWidth).append('<source src="' + video + '" type="video/mp4" >'),
+      $(".video-container video").attr("width", videoWidth).append('<source src="' + video + '" type="video/mp4" >')
+      console.log("test")
     </script>
 
 
